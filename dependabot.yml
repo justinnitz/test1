@@ -1,8 +1,13 @@
 version: 2
-update_configs:
-  - package_manager: "npm"
+updates:
+  # Configuration for Dockerfile
+  
+
+  # Configuration for npm
+  - package-ecosystem: "npm"
     directory: "/"
-    update_schedule: "daily"
+    schedule:
+      interval: "daily"
     allowed_updates:
       - match:
           update_type: "security"
